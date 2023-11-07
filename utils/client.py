@@ -2,6 +2,7 @@ from http.client import HTTPSConnection
 from base64 import b64encode
 from json import loads
 from json import dumps
+from keys import *
 
 class RestClient:
     domain = "api.dataforseo.com"
@@ -35,7 +36,7 @@ class RestClient:
 
 
 
-client = RestClient("kumar@warewe.com", "fd5a40e08700c882")
+client = RestClient(dataforseo_email, dataforseo_password)
 # client = RestClient("deepankar@warewe.com", "cb1661e9ec7c1fba")
 
 
